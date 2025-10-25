@@ -95,7 +95,7 @@ main, #root > div { background-color: transparent; }
     color: var(--cor-botao-texto-global); 
     font-weight: 600; font-size: var(--fonte-botao-global); padding: var(--botao-padding-vertical-global) var(--botao-padding-horizontal-global); border: none; border-radius: var(--botao-radius-global); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: 0 5px 15px var(--sombra-media);
 }
-.btn-gradient:hover { filter: brightness(1.15) saturate(1.1); transform: translateY(-3px); box-shadow: 0 8px 25px var(--sombra-media); }
+.btn-gradient:hover { filter: brightness(1.15) saturate(1.1); transform: translateY(-3px); box-shadow: 0 8px 25px var(--sombra-media); color: var(--cor-botao-texto-global);}
 .btn-icon { margin-left: 8px; transition: transform 0.3s ease; display: inline-block; }
 .btn-gradient:hover .btn-icon { transform: translateX(5px); }
 
