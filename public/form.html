@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Form Placeholder</title>
+</head>
+<body>
+  <form
+    name="contact"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+  >
+    <input type="hidden" name="form-name" value="contact" />
+
+    <p style="display: none;">
+      <label>Não preencha: <input name="bot-field" /></label>
+    </p>
+
+    <p><label>Nome: <input type="text" name="name" /></label></p>
+    <p><label>Email: <input type="email" name="email" /></label></p>
+    <p><label>Assunto: <input type="text" name="subject" /></label></p>
+    <p><label>Mensagem: <textarea name="message"></textarea></label></p>
+
+    <p><button type="submit">Enviar</button></p>
+  </form>
+</body>
+</html>

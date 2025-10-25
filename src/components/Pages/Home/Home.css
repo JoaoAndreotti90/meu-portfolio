@@ -1,0 +1,173 @@
+:root {
+  --fonte-titulo-mobile: 2rem;
+  --fonte-titulo-desktop: 3rem;
+  --fonte-subtitulo-mobile: 1rem;
+  --fonte-subtitulo-desktop: 1.25rem;
+  --fonte-bio-mobile: 1.1rem;
+  --fonte-bio-desktop: 1.25rem;
+  --max-width-bio: 450px;
+  --foto-size-mobile: 180px;
+  --foto-size-desktop: 300px;
+  --foto-radius: 50%;
+  --padding-lateral-mobile: 20px;
+}
+
+.home-section {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+  padding-left: var(--padding-lateral-mobile);
+  padding-right: var(--padding-lateral-mobile);
+  background: none;
+}
+
+.home-content-wrapper {
+  width: 100%;
+}
+
+.profile-pic-home {
+  width: var(--foto-size-mobile);
+  height: var(--foto-size-mobile);
+  border-radius: var(--foto-radius);
+  object-fit: cover;
+  z-index: 2;
+  position: relative;
+  border: 5px solid transparent;
+}
+
+.home-title {
+  font-size: var(--fonte-titulo-mobile);
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+.home-subtitle {
+  font-size: var(--fonte-subtitulo-mobile);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.home-bio {
+  font-size: var(--fonte-bio-mobile);
+  font-weight: 300;
+  max-width: var(--max-width-bio);
+}
+
+.skills-resumo-container {
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+.resumo-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.resumo-skill-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.resumo-grid {
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.resumo-skill-item:hover {
+  transform: scale(1.15);
+}
+
+.social-links-resumo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 991px) {
+  .cta-buttons {
+    margin-bottom: 30px;
+    padding: 0 15px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .resumo-grid {
+    gap: 1.5rem;
+  }
+
+  .resumo-skill-logo {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .home-section {
+    min-height: 85vh;
+    padding: 6rem 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .home-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .image-block {
+    order: 2;
+    text-align: right;
+  }
+
+  .text-block {
+    order: 1;
+    text-align: left;
+  }
+
+  .profile-pic-home {
+    width: var(--foto-size-desktop);
+    height: var(--foto-size-desktop);
+    border-radius: var(--foto-radius);
+    max-width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .home-title {
+    font-size: var(--fonte-titulo-desktop);
+    white-space: nowrap;
+  }
+
+  .home-subtitle {
+    font-size: var(--fonte-subtitulo-desktop);
+  }
+
+  .home-bio {
+    font-size: var(--fonte-bio-desktop);
+    max-width: none;
+  }
+
+  .resumo-grid {
+    justify-content: flex-start !important;
+    gap: 3rem !important;
+  }
+
+  .cta-buttons {
+    justify-content: flex-start !important;
+    margin-bottom: 0;
+  }
+
+  .social-links-resumo {
+    justify-content: flex-start;
+  }
+}

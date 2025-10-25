@@ -1,0 +1,160 @@
+.certification-container {
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.certification-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.certificates-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.certificate-card {
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  flex-basis: calc(50% - 1.25rem);
+  min-width: 280px;
+  flex-grow: 0;
+  height: 280px;
+  border: 1px solid transparent;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-content-wrapper {
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+  text-align: center;
+}
+
+.certificate-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+  border-bottom: 1px solid var(--cor-borda-suave, #DCE3EB);
+  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.certificate-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.certificate-description {
+  padding: 0 1.5rem;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: transform 0.4s ease-out,
+    opacity 0.3s ease-out,
+    visibility 0s linear 0.4s,
+    height 0.4s ease-out;
+}
+
+.certificate-description p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.certificate-card.expanded {
+  min-height: 200px;
+  height: auto;
+}
+
+.certificate-card.expanded .certificate-description {
+  opacity: 1;
+  transform: scaleY(1);
+  visibility: visible;
+  height: auto;
+  transition: transform 0.4s ease-out,
+    opacity 0.3s ease-out 0.1s,
+    visibility 0s linear 0s,
+    height 0.4s ease-out;
+}
+
+@media (min-width: 768px) {
+  .certification-container {
+    padding-bottom: 4rem;
+  }
+}
+
+.image-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.image-modal-content {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-modal-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.image-modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+@media (max-width: 600px) {
+  .image-modal-content {
+    padding: 10px;
+    max-width: 95%;
+    max-height: 95%;
+  }
+
+  .image-modal-close-button {
+    font-size: 1.5rem;
+    top: 5px;
+    right: 5px;
+  }
+}

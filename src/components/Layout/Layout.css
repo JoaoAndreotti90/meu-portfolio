@@ -1,0 +1,15 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  padding-top: 80px;
+  width: 100%;
+  box-sizing: border-box;
+}
