@@ -23,31 +23,32 @@ function Contact() {
     }
   };
 
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-  }
-
   const handleSubmit = (e) => {
     e.preventDefault(); 
     setSubmissionStatus('enviando'); 
 
-    fetch("/", { 
+    fetch("/api/send-email", { 
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": "contact", 
-        ...formData 
-      })
+      headers: { "Content-Type": "application/json" }, 
+      body: JSON.stringify(formData) 
     })
-    .then(() => {
-      setSubmissionStatus('sucesso'); 
-      setFormData({ name: '', email: '', subject: '', message: '' });
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Erro de resposta do servidor.");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      if (data.success) {
+        setSubmissionStatus('sucesso'); 
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setSubmissionStatus('erro'); 
+      }
     })
     .catch((error) => {
       setSubmissionStatus('erro'); 
-      console.error("Erro ao enviar formulário para Netlify:", error);
+      console.error("Erro ao enviar formulário para Vercel API:", error);
     });
   };
 
@@ -61,8 +62,6 @@ function Contact() {
       <form
         name="contact"
         method="POST"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
         className="contact-form"
         onSubmit={handleSubmit} 
       >
