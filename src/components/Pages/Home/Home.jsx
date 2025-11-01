@@ -52,7 +52,7 @@ function Home() {
 
           <div className="cta-buttons d-flex gap-3 justify-content-center justify-content-md-start mt-5">
             <Link to="/projetos" className="btn btn-primary btn-lg btn-gradient">
-              Ver Meus Projetos <span className="btn-icon">→</span>
+              Meus Projetos <span className="btn-icon">→</span>
             </Link>
 
             <Link to="/contato" className="btn btn-lg btn-outline-gradient">

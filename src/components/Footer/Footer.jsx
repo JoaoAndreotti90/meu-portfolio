@@ -50,7 +50,7 @@ function Footer() {
 
       <footer className="footer-desktop d-none d-md-block">
         <div className="container text-center py-4">
-          <p className="mb-0">&copy; 2025 João Andreotti. Todos os direitos reservados.</p>
+          <p className="mb-0">&copy; 2025 João Andreotti.</p>
         </div>
       </footer>
     </>

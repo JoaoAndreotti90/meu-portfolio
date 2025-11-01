@@ -4,34 +4,88 @@ import './Projects.css';
 const allProjectsData = [
   {
     id: 1,
-    title: "JobFinder",
-    description: "Um site de busca de emprego completo, com front-end em React e integração com backend.",
-    imageUrl: "/sites/site1.png",
-    siteUrl: "https://job-search-dev.netlify.app/",
-    githubUrl: "#",
-    tags: ["React", "Node.js", "CSS"],
+    title: "PixelFeed",
+    description: "Uma rede social de fotos completa, com login, curtidas e comentários. Usa React para o front-end e se comunica com um backend.",
+    imageUrl: "/sites/site2.png",
+    siteUrl: "https://pixel-feed-peach.vercel.app/login",
+    githubUrl: "https://github.com/JoaoAndreotti90/PixelFeed",
+    tags: ["React", "Supabase", "CSS", "Full-Stack"],
     category: "React" 
   },
   {
     id: 2,
-    title: "Projeto HTML/CSS", 
-    description: "Um clone de website estático feito puramente com HTML5 e CSS3, focado em design responsivo.",
-    imageUrl: "/sites/site1.png", 
-    siteUrl: "#",
-    githubUrl: "#", 
-    tags: ["HTML", "CSS"],
-    category: "HTML/CSS" 
+    title: "Mini Blog", 
+    description: "Uma aplicação para criar e postar artigos simples, com foco no uso de React para gerenciar o conteúdo e a navegação.",
+    imageUrl: "/sites/site3.png", 
+    siteUrl: "https://mini-blog-kappa-beryl.vercel.app/",
+    githubUrl: "https://github.com/JoaoAndreotti90/Mini-blog", 
+    tags: ["React", "Supabase", "CSS", "Full-Stack"],
+    category: "React" 
   },
   {
     id: 3,
-    title: "Calculadora React", 
-    description: "Uma calculadora funcional construída com React, utilizando State e Effects para gerenciar os cálculos.",
-    imageUrl: "/sites/site1.png", 
-    siteUrl: "#",
-    githubUrl: "#", 
-    tags: ["React", "JavaScript"],
+    title: "Portfólio",
+    description: "O próprio portfólio que você está vendo. É a demonstração principal das minhas habilidades em React, JavaScript e design responsivo, feito do zero.",
+    imageUrl: "/sites/site6.png",
+    siteUrl: "https://meu-portfolio-two-ruby.vercel.app/",
+    githubUrl: "https://github.com/JoaoAndreotti90/meu-portfolio",
+    tags: ["React", "CSS", "bootstrap"] ,
+    category: "React" 
+  },
+  {
+    id: 4,
+    title: "JobFinder",
+    description: "Um site de busca de emprego completo, com front-end em React e integração com backend.",
+    imageUrl: "/sites/site1.png",
+    siteUrl: "https://job-finder-one-eta.vercel.app/",
+    githubUrl: "https://github.com/JoaoAndreotti90/job-finder-front",
+    tags: ["React", "Node.js", "CSS", "Full-Stack"],
+    category: "React" 
+  },
+  
+  {
+    id: 5,
+    title: "Cadastro",
+    description: "Um sistema básico de CRUD (Criar, Ler, Atualizar, Deletar) de usuários, essencial para mostrar manipulação de dados em React.",
+    imageUrl: "/sites/site5.png",
+    siteUrl: "http://crud-react-joao.vercel.app/",
+    githubUrl: "https://github.com/JoaoAndreotti90/crud-react",
+    tags: ["React", "Node.js", "CSS", "bootstrap", "Full-Stack"],
+    category: "React" 
+  },
+  
+  {
+    id: 6,
+    title: "projeto-spstyle", 
+    description: "Uma loja esportiva, feito com HTML e CSS para o layout, e JavaScript simples para criar o carrossel de imagens.",
+    imageUrl: "/sites/site4.png", 
+    siteUrl: "https://loja-esportiva-ten.vercel.app/",
+    githubUrl: "https://github.com/JoaoAndreotti90/loja-esportiva", 
+    tags: ["HTML", "CSS", "JS"],
+    category: "HTML/CSS" 
+  },
+
+  {
+    id: 7,
+    title: "Ser Digital", 
+    description: "Landing page desenvolvida durante um curso, foco total em HTML e CSS puro para garantir a responsividade (adaptável a celulares e computadores).",
+    imageUrl: "/sites/site7.png", 
+    siteUrl: "https://ser-digital-omega.vercel.app/",
+    githubUrl: "https://github.com/JoaoAndreotti90/Ser-Digital", 
+    tags: ["HTML", "CSS"],
+    category: "HTML/CSS" 
+  },
+   {
+    id: 8,
+    title: "Jogo de Palavras",
+    description: "Este é um jogo simples, o jogador tem que adivinhar uma palavra secreta, letra por letra, antes que suas chances acabem.",
+    imageUrl: "/sites/site8.png",
+    siteUrl: "https://jogo-palavras.vercel.app/",
+    githubUrl: "https://github.com/JoaoAndreotti90/Jogo-Palavras",
+    tags: ["React", "CSS"],
     category: "React" 
   }
+  
 ];
 
 
