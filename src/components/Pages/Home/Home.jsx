@@ -63,7 +63,7 @@ function Home() {
 
         <div className="image-block col-md-6 text-center order-1 order-md-2 mb-4 mb-md-0">
           <img
-            src="/logo.jpg"
+            src="/perfil.jpeg"
             alt="Foto de Perfil de João Andreotti"
             className="profile-pic-home shadow-lg"
           />

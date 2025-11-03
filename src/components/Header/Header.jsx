@@ -38,18 +38,6 @@ function Header() {
             </li>
           </ul>
 
-          <ul className="navbar-nav d-none d-lg-flex align-items-center">
-            <li className="nav-item">
-              <Link className="nav-link" to="/">
-                <img
-                  src="/logo.jpg"
-                  alt="Foto de Perfil"
-                  className="profile-photo-nav"
-                />
-              </Link>
-            </li>
-          </ul>
-
         </div>
       </div>
     </nav>

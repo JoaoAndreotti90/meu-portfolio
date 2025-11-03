@@ -37,7 +37,7 @@ const allProjectsData = [
     title: "JobFinder",
     description: "Um site de busca de emprego completo, com front-end em React e integração com backend.",
     imageUrl: "/sites/site1.png",
-    siteUrl: "https://job-finder-one-eta.vercel.app/",
+    siteUrl: "https://job-finder-front.vercel.app/",
     githubUrl: "https://github.com/JoaoAndreotti90/job-finder-front",
     tags: ["React", "Node.js", "CSS", "Full-Stack"],
     category: "React" 
