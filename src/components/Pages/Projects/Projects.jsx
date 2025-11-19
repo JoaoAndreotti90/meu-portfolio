@@ -3,6 +3,16 @@ import './Projects.css';
 
 const allProjectsData = [
   {
+    id: 9,
+    title: "DoutorCerto",
+    description: "Plataforma completa de agendamento médico que conecta pacientes a especialistas.",
+    imageUrl: "/sites/site9.png",
+    siteUrl: "https://doutor-certo.vercel.app/",
+    githubUrl: "https://github.com/JoaoAndreotti90/DoutorCerto",
+    tags: ["React", "Supabase", "CSS", "Full-Stack"],
+    category: "React" 
+  },
+  {
     id: 1,
     title: "PixelFeed",
     description: "Uma rede social de fotos completa, com login, curtidas e comentários. Usa React para o front-end e se comunica com um backend.",
