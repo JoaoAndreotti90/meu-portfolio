@@ -3,6 +3,16 @@ import './Projects.css';
 
 const allProjectsData = [
   {
+    id: 10,
+    title: "AuraPro",
+    description: "Landing Page responsiva e moderna desenvolvida com React e CSS puro (sem frameworks), com foco em UI Design e experiência do usuário.",
+    imageUrl: "/sites/site10.png",
+    siteUrl: "https://aura-pro-sigma.vercel.app/",
+    githubUrl: "https://github.com/JoaoAndreotti90/AuraPro",
+    tags: ["React", "CSS"],
+    category: "React" 
+  },
+  {
     id: 9,
     title: "DoutorCerto",
     description: "Plataforma completa de agendamento médico que conecta pacientes a especialistas.",
