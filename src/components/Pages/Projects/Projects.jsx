@@ -3,6 +3,16 @@ import './Projects.css';
 
 const allProjectsData = [
   {
+    id: 11,
+    title: "TaskFlow",
+    description: "O TaskFlow centraliza a organização de múltiplos projetos em dashboards exclusivos, eliminando a desordem com quadros Kanban interativos e gestão visual de equipes em tempo real.",
+    imageUrl: "/sites/site11.png",
+    siteUrl: "https://taskflow-sepia-psi.vercel.app/",
+    githubUrl: "https://github.com/JoaoAndreotti90/taskflow",
+    tags: ["React", "Supabase", "CSS", "Full-Stack"],
+    category: "React" 
+  },
+  {
     id: 10,
     title: "AuraPro",
     description: "Landing Page responsiva e moderna desenvolvida com React e CSS puro (sem frameworks), com foco em UI Design e experiência do usuário.",
