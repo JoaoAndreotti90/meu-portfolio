@@ -4,6 +4,16 @@ import './Projects.css';
 const allProjectsData = [
   {
     id: 11,
+    title: "Estoque",
+    description: "Desenvolvi este projeto para treinar a criação de interfaces responsivas apenas com Tailwind CSS. O desafio foi abandonar componentes prontos e estilizar cada elemento manualmente para entender o poder das classes utilitárias.",
+    imageUrl: "/sites/site12.png",
+    siteUrl: "https://estoque-git-main-joao-andreottis-projects.vercel.app/",
+    githubUrl: "https://github.com/JoaoAndreotti90/estoque",
+    tags: ["React", "Tailwind CSS"],
+    category: "React" 
+  },
+  {
+    id: 11,
     title: "TaskFlow",
     description: "O TaskFlow centraliza a organização de múltiplos projetos em dashboards exclusivos, eliminando a desordem com quadros Kanban interativos e gestão visual de equipes em tempo real.",
     imageUrl: "/sites/site11.png",
