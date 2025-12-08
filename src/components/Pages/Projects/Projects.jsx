@@ -3,9 +3,19 @@ import './Projects.css';
 
 const allProjectsData = [
   {
+    id: 12,
+    title: "Cineflix",
+    description: "Catálogo de filmes responsivo que consome a API do TMDB. Foco em estilização com Tailwind CSS e lógica de busca com React.",
+    imageUrl: "/sites/site13.png",
+    siteUrl: "https://cineflix-ruddy.vercel.app/",
+    githubUrl: "https://github.com/JoaoAndreotti90/cineflix",
+    tags: ["React", "Tailwind CSS", "API"],
+    category: "React" 
+  },
+  {
     id: 11,
     title: "Estoque",
-    description: "Desenvolvi este projeto para treinar a criação de interfaces responsivas apenas com Tailwind CSS. O desafio foi abandonar componentes prontos e estilizar cada elemento manualmente para entender o poder das classes utilitárias.",
+    description: "Projeto desenvolvido para validar meus estudos de Tailwind CSS, migrando da lógica de componentes do Bootstrap. O foco foi criar uma interface responsiva e customizada do zero, utilizando apenas classes utilitárias para ter controle total do design.",
     imageUrl: "/sites/site12.png",
     siteUrl: "https://estoque-git-main-joao-andreottis-projects.vercel.app/",
     githubUrl: "https://github.com/JoaoAndreotti90/estoque",
