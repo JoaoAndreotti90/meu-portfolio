@@ -3,7 +3,7 @@ import './Projects.css';
 
 const allProjectsData = [
   {
-    id: 12,
+    id: 13,
     title: "Cineflix",
     description: "Catálogo de filmes responsivo que consome a API do TMDB. Foco em estilização com Tailwind CSS e lógica de busca com React.",
     imageUrl: "/sites/site13.png",
@@ -13,7 +13,7 @@ const allProjectsData = [
     category: "React" 
   },
   {
-    id: 11,
+    id: 12,
     title: "Estoque",
     description: "Projeto desenvolvido para validar meus estudos de Tailwind CSS, migrando da lógica de componentes do Bootstrap. O foco foi criar uma interface responsiva e customizada do zero, utilizando apenas classes utilitárias para ter controle total do design.",
     imageUrl: "/sites/site12.png",
