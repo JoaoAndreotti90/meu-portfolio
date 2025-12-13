@@ -79,7 +79,7 @@ const allProjectsData = [
     imageUrl: "/sites/site6.png",
     siteUrl: "https://meu-portfolio-two-ruby.vercel.app/",
     githubUrl: "https://github.com/JoaoAndreotti90/meu-portfolio",
-    tags: ["React", "CSS"] ,
+    tags: ["React", "CSS", "bootstrap"] ,
     category: "React" 
   },
   {

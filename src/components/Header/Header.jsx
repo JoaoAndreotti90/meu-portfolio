@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
 import './Header.css';
 
 function Header() {
@@ -7,6 +6,7 @@ function Header() {
     <nav className="navbar navbar-expand-md">
       <div className="container-fluid">
         <div className="flex-grow-1 d-md-none"></div>
+        
         <button
           className="navbar-toggler"
           type="button"
@@ -21,23 +21,28 @@ function Header() {
 
         <div className="collapse navbar-collapse justify-content-md-center justify-content-lg-between" id="meuNavbar">
           <ul className="navbar-nav mb-2 mb-lg-0 text-end text-md-center">
+            
             <li className="nav-item">
-              <NavLink className="nav-link" to="/">Inicio</NavLink>
+              <a className="nav-link" href="#home">Inicio</a>
             </li>
+            
             <li className="nav-item">
-              <NavLink className="nav-link" to="/projetos">Projetos</NavLink>
+              <a className="nav-link" href="#projetos">Projetos</a>
             </li>
+            
             <li className="nav-item">
-              <NavLink className="nav-link" to="/habilidades">Habilidades</NavLink>
+              <a className="nav-link" href="#habilidades">Habilidades</a>
             </li>
+            
             <li className="nav-item">
-              <NavLink className="nav-link" to="/certificacoes">Certificações</NavLink>
+              <a className="nav-link" href="#certificacoes">Certificações</a>
             </li>
+            
             <li className="nav-item">
-              <NavLink className="nav-link" to="/contato">Contato</NavLink>
+              <a className="nav-link" href="#contato">Contato</a>
             </li>
+            
           </ul>
-
         </div>
       </div>
     </nav>
