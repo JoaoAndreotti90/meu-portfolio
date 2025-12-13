@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Home.css';
 
 const topSkills = [
@@ -44,7 +43,7 @@ function Home() {
 
           <div className="skills-resumo-container mt-5 mb-5">
             <h3 className="resumo-title mb-3">Minha stack principal:</h3>
-            <div className="resumo-grid d-flex justify-content-center justify-content-md-start gap-4">
+            <div className="resumo-grid d-flex flex-wrap justify-content-center justify-content-md-start gap-4">
               {topSkills.map((skill, index) => (
                 <div key={index} className="resumo-skill-item text-center">
                   <img src={skill.logo} alt={`Logo ${skill.name}`} className="resumo-skill-logo" />
@@ -54,13 +53,13 @@ function Home() {
           </div>
 
           <div className="cta-buttons d-flex gap-3 justify-content-center justify-content-md-start mt-5">
-            <Link to="/projetos" className="btn btn-primary btn-lg btn-gradient">
+            <a href="#projetos" className="btn btn-primary btn-lg btn-gradient">
               Ver Projetos <span className="btn-icon">→</span>
-            </Link>
+            </a>
 
-            <Link to="/contato" className="btn btn-lg btn-outline-gradient">
+            <a href="#contato" className="btn btn-lg btn-outline-gradient">
               Contato
-            </Link>
+            </a>
           </div>
         </div>
 
