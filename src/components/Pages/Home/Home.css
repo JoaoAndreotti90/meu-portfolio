@@ -1,122 +1,187 @@
 :root {
-  --fonte-titulo-mobile: 2rem;
-  --fonte-titulo-desktop: 3rem;
-  --fonte-subtitulo-mobile: 1rem;
-  --fonte-subtitulo-desktop: 1.25rem;
-  --fonte-bio-mobile: 1.1rem;
-  --fonte-bio-desktop: 1.25rem;
-  --max-width-bio: 450px;
-  --foto-size-mobile: 180px;
-  --foto-size-desktop: 300px;
-  --foto-radius: 50%;
-  --padding-lateral-mobile: 20px;
+  --fonte-titulo-mobile: 2.2rem;
+  --fonte-titulo-desktop: 3.5rem;
+  --fonte-subtitulo-mobile: 1.1rem;
+  --fonte-subtitulo-desktop: 1.4rem;
+  --fonte-bio-mobile: 1rem;
+  --fonte-bio-desktop: 1.2rem;
+  
+  --foto-size-mobile: 200px;
+  --foto-size-desktop: 320px;
+  
+  --primary-color: #2563eb;
+  --secondary-color: #3b82f6;
 }
 
 .home-section {
   min-height: 85vh;
   display: flex;
   align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 4rem 1rem;
   width: 100%;
-  padding-left: var(--padding-lateral-mobile);
-  padding-right: var(--padding-lateral-mobile);
-  background: none;
 }
 
 .home-content-wrapper {
   width: 100%;
 }
 
+.profile-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
 .profile-pic-home {
   width: var(--foto-size-mobile);
   height: var(--foto-size-mobile);
-  border-radius: var(--foto-radius);
+  border-radius: 50%;
   object-fit: cover;
   z-index: 2;
   position: relative;
-  border: 5px solid transparent;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+}
+
+.profile-pic-home:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .home-title {
   font-size: var(--fonte-titulo-mobile);
-  font-weight: 700;
-  margin-bottom: 0.25rem;
-  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: -1px;
+  color: #fff; 
+}
+
+.subtitle-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .home-subtitle {
   font-size: var(--fonte-subtitulo-mobile);
-  font-weight: 400;
-  margin-bottom: 1rem;
+  font-weight: 500;
+  margin: 0;
+  color: #aaa; 
 }
 
 .home-bio {
   font-size: var(--fonte-bio-mobile);
   font-weight: 300;
-  max-width: var(--max-width-bio);
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto;
+  opacity: 0.9;
+  color: #ddd;
+}
+
+.social-links-inline {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.social-icon {
+  color: inherit;
+  opacity: 0.7;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  opacity: 1;
+  color: var(--primary-color);
 }
 
 .skills-resumo-container {
-  padding: 20px 0;
-  margin-bottom: 30px;
+  padding: 10px 0;
 }
 
 .resumo-title {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 1.5rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  opacity: 0.6;
 }
 
 .resumo-skill-logo {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   object-fit: contain;
-  transition: transform 0.2s;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  filter: grayscale(20%);
 }
 
-.resumo-grid {
-  gap: 3rem;
-  flex-wrap: wrap;
-  justify-content: center;
+.resumo-skill-item {
+  cursor: pointer;
 }
 
-.resumo-skill-item:hover {
-  transform: scale(1.15);
+.resumo-skill-item:hover .resumo-skill-logo {
+  transform: translateY(-10px) scale(1.1);
+  filter: grayscale(0%);
 }
 
-.social-links-resumo {
-  display: flex;
+.cta-buttons {
+  margin-top: 2rem;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  border: none;
+  color: white !important; 
+  padding: 12px 35px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3), 0 2px 4px -1px rgba(37, 99, 235, 0.1);
+  transition: all 0.3s ease;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
+  text-decoration: none;
 }
 
-@media (max-width: 991px) {
-  .cta-buttons {
-    margin-bottom: 30px;
-    padding: 0 15px;
-    justify-content: center;
-    width: 100%;
-  }
+.btn-gradient:hover {
+  box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.4), 0 4px 6px -2px rgba(37, 99, 235, 0.2);
+  transform: translateY(-2px);
+}
 
-  .resumo-grid {
-    gap: 1.5rem;
-  }
+.btn-icon {
+  display: inline-block;
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+}
 
-  .resumo-skill-logo {
-    width: 60px;
-    height: 60px;
-  }
+.btn-gradient:hover .btn-icon {
+  transform: translateX(5px);
+}
+
+.btn-outline-gradient {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  background: transparent;
+  padding: 12px 35px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-outline-gradient:hover {
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+  transform: translateY(-2px);
 }
 
 @media (min-width: 992px) {
   .home-section {
-    min-height: 85vh;
     padding: 6rem 0;
-    padding-left: 0;
-    padding-right: 0;
   }
 
   .home-content-wrapper {
@@ -138,14 +203,17 @@
   .profile-pic-home {
     width: var(--foto-size-desktop);
     height: var(--foto-size-desktop);
-    border-radius: var(--foto-radius);
-    max-width: 100%;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }
 
   .home-title {
     font-size: var(--fonte-titulo-desktop);
-    white-space: nowrap;
+  }
+
+  .subtitle-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
   }
 
   .home-subtitle {
@@ -154,20 +222,11 @@
 
   .home-bio {
     font-size: var(--fonte-bio-desktop);
-    max-width: none;
+    margin: 0;
+    max-width: 600px;
   }
-
-  .resumo-grid {
-    justify-content: flex-start !important;
-    gap: 3rem !important;
-  }
-
+  
   .cta-buttons {
     justify-content: flex-start !important;
-    margin-bottom: 0;
-  }
-
-  .social-links-resumo {
-    justify-content: flex-start;
   }
 }
