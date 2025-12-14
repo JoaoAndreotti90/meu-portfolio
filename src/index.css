@@ -44,6 +44,9 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: auto !important;
+}
 
 html, body {
   margin: 0;
@@ -54,9 +57,7 @@ html, body {
 }
 
 body {
-  background: radial-gradient(ellipse at top, #1E293B 0%, var(--cor-fundo-inicio) 100%);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-color: var(--cor-fundo-inicio);
   color: var(--cor-texto-secundario);
   font-family: var(--fonte-principal);
   min-height: 100vh;
@@ -65,7 +66,21 @@ body {
   overflow-x: hidden;
 }
 
+/* 1. O Gradiente Principal (Fundo Azul) */
 body::before {
+  content: '';
+  position: fixed; /* Isso faz o efeito "fixed" sem travar o scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at top, #1E293B 0%, var(--cor-fundo-inicio) 100%);
+  z-index: -2; /* Fica atrás de tudo */
+  pointer-events: none;
+}
+
+/* 2. A Textura de Luzes (Por cima do gradiente) */
+body::after {
   content: '';
   position: fixed;
   top: 0;
@@ -75,8 +90,8 @@ body::before {
   background-image: 
     radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
     radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.06) 0%, transparent 50%);
+  z-index: -1; /* Fica atrás do conteúdo, mas na frente do fundo azul */
   pointer-events: none;
-  z-index: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -8,11 +8,9 @@ function Header() {
 
   const handleClick = (e, targetId) => {
     e.preventDefault();
+    setIsNavCollapsed(true); 
     const element = document.querySelector(targetId);
     if (element) {
-      // Fecha o menu primeiro
-      setIsNavCollapsed(true);
-      // Pula direto para a seção (sem animação para não travar)
       element.scrollIntoView({ behavior: 'auto', block: 'start' });
     }
   };
@@ -37,33 +35,23 @@ function Header() {
           <ul className="navbar-nav mb-2 mb-lg-0 text-end text-md-center">
             
             <li className="nav-item">
-              <a className="nav-link" href="#home" onClick={(e) => handleClick(e, '#home')}>
-                Inicio
-              </a>
+              <a className="nav-link" href="#home" onClick={(e) => handleClick(e, '#home')}>Inicio</a>
             </li>
             
             <li className="nav-item">
-              <a className="nav-link" href="#projetos" onClick={(e) => handleClick(e, '#projetos')}>
-                Projetos
-              </a>
+              <a className="nav-link" href="#projetos" onClick={(e) => handleClick(e, '#projetos')}>Projetos</a>
             </li>
             
             <li className="nav-item">
-              <a className="nav-link" href="#habilidades" onClick={(e) => handleClick(e, '#habilidades')}>
-                Habilidades
-              </a>
+              <a className="nav-link" href="#habilidades" onClick={(e) => handleClick(e, '#habilidades')}>Habilidades</a>
             </li>
             
             <li className="nav-item">
-              <a className="nav-link" href="#certificacoes" onClick={(e) => handleClick(e, '#certificacoes')}>
-                Certificações
-              </a>
+              <a className="nav-link" href="#certificacoes" onClick={(e) => handleClick(e, '#certificacoes')}>Certificações</a>
             </li>
             
             <li className="nav-item">
-              <a className="nav-link" href="#contato" onClick={(e) => handleClick(e, '#contato')}>
-                Contato
-              </a>
+              <a className="nav-link" href="#contato" onClick={(e) => handleClick(e, '#contato')}>Contato</a>
             </li>
             
           </ul>

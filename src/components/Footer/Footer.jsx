@@ -7,7 +7,6 @@ function Footer() {
     e.preventDefault(); 
     const element = document.querySelector(targetId);
     if (element) {
-      // Pula direto para a seção (sem animação)
       element.scrollIntoView({ behavior: 'auto', block: 'start' });
     }
   };
