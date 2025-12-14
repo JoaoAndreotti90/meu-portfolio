@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; 
+import React, { useState } from 'react';
 import './Header.css';
 
 function Header() {
@@ -6,10 +6,19 @@ function Header() {
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
-  const closeNav = () => setIsNavCollapsed(true);
+  const handleScroll = (e, targetId) => {
+    e.preventDefault(); 
+    
+    setIsNavCollapsed(true); 
+    
+    const element = document.querySelector(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   return (
-    <nav className="navbar navbar-expand-md fixed-top bg-white"> 
+    <nav className="navbar navbar-expand-md fixed-top bg-white">
       <div className="container-fluid">
         <div className="flex-grow-1 d-md-none"></div>
         
@@ -28,31 +37,31 @@ function Header() {
           <ul className="navbar-nav mb-2 mb-lg-0 text-end text-md-center">
             
             <li className="nav-item">
-              <a className="nav-link" href="#home" onClick={closeNav}> 
+              <a className="nav-link" href="#home" onClick={(e) => handleScroll(e, '#home')}>
                 Inicio
               </a>
             </li>
             
             <li className="nav-item">
-              <a className="nav-link" href="#projetos" onClick={closeNav}>
+              <a className="nav-link" href="#projetos" onClick={(e) => handleScroll(e, '#projetos')}>
                 Projetos
               </a>
             </li>
             
             <li className="nav-item">
-              <a className="nav-link" href="#habilidades" onClick={closeNav}>
+              <a className="nav-link" href="#habilidades" onClick={(e) => handleScroll(e, '#habilidades')}>
                 Habilidades
               </a>
             </li>
             
             <li className="nav-item">
-              <a className="nav-link" href="#certificacoes" onClick={closeNav}>
+              <a className="nav-link" href="#certificacoes" onClick={(e) => handleScroll(e, '#certificacoes')}>
                 Certificações
               </a>
             </li>
             
             <li className="nav-item">
-              <a className="nav-link" href="#contato" onClick={closeNav}>
+              <a className="nav-link" href="#contato" onClick={(e) => handleScroll(e, '#contato')}>
                 Contato
               </a>
             </li>
