@@ -10,15 +10,18 @@
   --foto-size-desktop: 320px;
   
   --primary-color: #2563eb;
-  --secondary-color: #3b82f6;
+  --secondary-color: #1e40af; 
+
+  --text-color-main: #e0e0e0;
+  --text-color-muted: #aaaaaa;
 }
 
 .home-section {
-  min-height: 85vh;
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 1.5rem;
+  padding: 6rem 1.5rem 4rem 1.5rem;
   width: 100%;
   overflow-x: hidden;
 }
@@ -70,7 +73,7 @@
   font-size: var(--fonte-subtitulo-mobile);
   font-weight: 500;
   margin: 0;
-  color: #aaa; 
+  color: var(--text-color-muted);
   text-align: center;
 }
 
@@ -80,8 +83,7 @@
   line-height: 1.6;
   max-width: 500px;
   margin: 0 auto;
-  opacity: 0.9;
-  color: #ddd;
+  color: var(--text-color-main);
   text-align: center;
 }
 
@@ -177,16 +179,6 @@
   transform: translateY(-2px);
 }
 
-.btn-icon {
-  display: inline-block;
-  margin-left: 8px;
-  transition: transform 0.2s ease;
-}
-
-.btn-gradient:hover .btn-icon {
-  transform: translateX(5px);
-}
-
 .btn-outline-gradient {
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
@@ -210,9 +202,39 @@
   transform: translateY(-2px);
 }
 
+.about-section {
+  padding-top: 4rem;
+  padding-bottom: 10rem;
+  margin-top: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-title-large {
+  font-size: 2.5rem;
+  color: #fff;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.text-highlight {
+  color: var(--primary-color);
+}
+
+.about-text {
+  color: var(--text-color-main);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.about-text strong {
+  color: #fff;
+  font-weight: 600;
+}
+
 @media (min-width: 992px) {
   .home-section {
-    padding: 6rem 0;
+    padding: 8rem 0 6rem 0;
   }
 
   .home-content-wrapper {
@@ -291,5 +313,15 @@
   .btn-outline-gradient {
     width: auto;
     min-width: auto;
+  }
+  
+  .about-section {
+    padding-top: 6rem;
+    padding-bottom: 12rem;
+  }
+
+  .about-title-large {
+    font-size: 3.5rem;
+    text-align: left;
   }
 }
