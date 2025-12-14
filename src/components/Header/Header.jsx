@@ -6,15 +6,43 @@ function Header() {
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
-  const handleScroll = (e, targetId) => {
-    e.preventDefault(); 
-    
-    setIsNavCollapsed(true); 
-    
-    const element = document.querySelector(targetId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+  const easeInOutQuad = (t, b, c, d) => {
+    t /= d / 2;
+    if (t < 1) return (c / 2) * t * t + b;
+    t--;
+    return (-c / 2) * (t * (t - 2) - 1) + b;
+  };
+
+  const smoothScrollTo = (targetId) => {
+    const targetElement = document.querySelector(targetId);
+    if (!targetElement) return;
+
+    setIsNavCollapsed(true);
+
+    const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+    const startPosition = window.scrollY;
+    const distance = targetPosition - startPosition;
+    const duration = 800;
+    let start = null;
+
+    const animation = (currentTime) => {
+      if (start === null) start = currentTime;
+      const timeElapsed = currentTime - start;
+      const run = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+      
+      window.scrollTo(0, run);
+
+      if (timeElapsed < duration) {
+        requestAnimationFrame(animation);
+      }
+    };
+
+    requestAnimationFrame(animation);
+  };
+
+  const handleClick = (e, targetId) => {
+    e.preventDefault();
+    smoothScrollTo(targetId);
   };
 
   return (
@@ -37,31 +65,31 @@ function Header() {
           <ul className="navbar-nav mb-2 mb-lg-0 text-end text-md-center">
             
             <li className="nav-item">
-              <a className="nav-link" href="#home" onClick={(e) => handleScroll(e, '#home')}>
+              <a className="nav-link" href="#home" onClick={(e) => handleClick(e, '#home')}>
                 Inicio
               </a>
             </li>
             
             <li className="nav-item">
-              <a className="nav-link" href="#projetos" onClick={(e) => handleScroll(e, '#projetos')}>
+              <a className="nav-link" href="#projetos" onClick={(e) => handleClick(e, '#projetos')}>
                 Projetos
               </a>
             </li>
             
             <li className="nav-item">
-              <a className="nav-link" href="#habilidades" onClick={(e) => handleScroll(e, '#habilidades')}>
+              <a className="nav-link" href="#habilidades" onClick={(e) => handleClick(e, '#habilidades')}>
                 Habilidades
               </a>
             </li>
             
             <li className="nav-item">
-              <a className="nav-link" href="#certificacoes" onClick={(e) => handleScroll(e, '#certificacoes')}>
+              <a className="nav-link" href="#certificacoes" onClick={(e) => handleClick(e, '#certificacoes')}>
                 Certificações
               </a>
             </li>
             
             <li className="nav-item">
-              <a className="nav-link" href="#contato" onClick={(e) => handleScroll(e, '#contato')}>
+              <a className="nav-link" href="#contato" onClick={(e) => handleClick(e, '#contato')}>
                 Contato
               </a>
             </li>
