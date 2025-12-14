@@ -6,43 +6,15 @@ function Header() {
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
-  const easeInOutQuad = (t, b, c, d) => {
-    t /= d / 2;
-    if (t < 1) return (c / 2) * t * t + b;
-    t--;
-    return (-c / 2) * (t * (t - 2) - 1) + b;
-  };
-
-  const smoothScrollTo = (targetId) => {
-    const targetElement = document.querySelector(targetId);
-    if (!targetElement) return;
-
-    setIsNavCollapsed(true);
-
-    const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-    const startPosition = window.scrollY;
-    const distance = targetPosition - startPosition;
-    const duration = 800;
-    let start = null;
-
-    const animation = (currentTime) => {
-      if (start === null) start = currentTime;
-      const timeElapsed = currentTime - start;
-      const run = easeInOutQuad(timeElapsed, startPosition, distance, duration);
-      
-      window.scrollTo(0, run);
-
-      if (timeElapsed < duration) {
-        requestAnimationFrame(animation);
-      }
-    };
-
-    requestAnimationFrame(animation);
-  };
-
   const handleClick = (e, targetId) => {
     e.preventDefault();
-    smoothScrollTo(targetId);
+    const element = document.querySelector(targetId);
+    if (element) {
+      // Fecha o menu primeiro
+      setIsNavCollapsed(true);
+      // Pula direto para a seção (sem animação para não travar)
+      element.scrollIntoView({ behavior: 'auto', block: 'start' });
+    }
   };
 
   return (
