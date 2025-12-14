@@ -31,7 +31,7 @@ function Header() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse justify-content-md-center justify-content-lg-between`} id="meuNavbar">
+        <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse justify-content-md-center justify-content-lg-center`} id="meuNavbar">
           <ul className="navbar-nav mb-2 mb-lg-0 text-end text-md-center">
             
             <li className="nav-item">

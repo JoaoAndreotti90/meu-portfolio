@@ -84,8 +84,8 @@ function Home() {
               <span className="text-highlight">construo soluções.</span>
             </h2>
           </div>
-          <div className="col-md-6">
-            <p className="about-text lead">
+          <div className="col-md-6 text-center text-md-start">
+            <p className="about-text">
               Sou estudante do <strong>3º ano de Ciência da Computação</strong> e um entusiasta do desenvolvimento Front-end.
             </p>
             <p className="about-text">
@@ -95,7 +95,7 @@ function Home() {
             <p className="about-text">
               Estou em busca da minha primeira oportunidade como desenvolvedor Júnior ou Estagiário para aplicar esse conhecimento e evoluir tecnicamente com a equipe.
             </p>
-          </div>
+        </div>
         </div>
       </section>
     </>
