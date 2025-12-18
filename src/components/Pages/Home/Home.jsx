@@ -19,7 +19,7 @@ function Home() {
 
             <div className="subtitle-wrapper mb-3">
               <h2 className="home-subtitle">
-                Desenvolvedor Front-end | React.js
+                Desenvolvedor Full Stack | React.js & Next.js
               </h2>
               
               <div className="social-links-inline">
@@ -38,7 +38,7 @@ function Home() {
             </div>
 
             <p className="home-bio mt-3 lead">
-              Transformo ideias em interfaces web modernas, responsivas e de alta performance. Focado em criar experiências digitais fluidas com React e JavaScript.
+              Desenvolvo aplicações web completas, unindo interfaces modernas a back-ends robustos. Focado em criar soluções escaláveis com React, Next.js e Node.js.
             </p>
 
             <div className="skills-resumo-container mt-5 mb-5">
@@ -86,14 +86,14 @@ function Home() {
           </div>
           <div className="col-md-6 text-center text-md-start">
             <p className="about-text">
-              Sou estudante do <strong>3º ano de Ciência da Computação</strong> e um entusiasta do desenvolvimento Front-end.
+              Sou estudante do <strong>3º ano de Ciência da Computação</strong> e entusiasta do desenvolvimento Full Stack.
             </p>
             <p className="about-text">
               Minha jornada começou na faculdade, onde descobri minha paixão pelo ecossistema JavaScript. 
-              Hoje, dedico meus estudos a criar interfaces funcionais e escaláveis, aplicando conceitos de Clean Code em projetos complexos como o <strong>DoutorCerto</strong>.
+              Hoje, crio aplicações de ponta a ponta, integrando interfaces fluidas com bancos de dados e APIs em projetos reais.
             </p>
             <p className="about-text">
-              Estou em busca da minha primeira oportunidade como desenvolvedor Júnior ou Estagiário para aplicar esse conhecimento e evoluir tecnicamente com a equipe.
+              Estou em busca da minha primeira oportunidade como desenvolvedor Júnior ou Estagiário para aplicar minhas habilidades em Front e Back-end e crescer com a equipe.
             </p>
         </div>
         </div>

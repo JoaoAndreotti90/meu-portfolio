@@ -7,6 +7,7 @@ const skillsData = [
     items: [
       { name: 'React', logo: '/icons/icons8-reagir-96.png' },
       { name: 'Next.js', logo: '/icons/icons8-nextjs-96.png' },
+      { name: 'Typescript', logo: '/icons/icons8-typescript-96.png' },
       { name: 'JavaScript', logo: '/icons/icons8-javascript-96.png' },
       { name: 'Tailwind CSS', logo: '/icons/icons8-tailwind-96.png' },
       { name: 'HTML5', logo: '/icons/icons8-html-96.png' },
@@ -18,6 +19,7 @@ const skillsData = [
     category: 'Back-End & Banco de Dados',
     items: [
       { name: 'Node.js', logo: '/icons/icons8-nodejs-96.png' },
+      { name: 'Prima ORM', logo: '/icons/icons8-prisma.png' },
       { name: 'Express.js', logo: '/icons/icons8-expresso-js-96.png' },
       { name: 'Supabase', logo: '/icons/icons8-supabase-96.png' },
       { name: 'MySQL', logo: '/icons/icons8-sql-96.png' },

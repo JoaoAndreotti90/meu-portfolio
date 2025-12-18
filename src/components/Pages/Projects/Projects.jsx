@@ -3,6 +3,16 @@ import './Projects.css';
 
 const allProjectsData = [
   {
+    id: 14,
+    title: "NextFood",
+    description: "Plataforma Full Stack com Next.js (App Router) e TypeScript. Integração completa com Stripe, autenticação segura e banco de dados PostgreSQL via Prisma.",
+    imageUrl: "/sites/site14.png",
+    siteUrl: "https://next-food-xi-livid.vercel.app/",
+    githubUrl: "https://github.com/JoaoAndreotti90/NextFood",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Stripe"],
+    category: "Next" 
+  },
+  {
     id: 13,
     title: "Cineflix",
     description: "Catálogo de filmes responsivo que consome a API do TMDB. Foco em estilização com Tailwind CSS e lógica de busca com React.",
@@ -162,6 +172,12 @@ const Projects = () => {
           Todos
         </button>
         <button 
+          className={`filter-btn ${activeFilter === 'Next' ? 'active' : ''}`}
+          onClick={() => setActiveFilter('Next')}
+        >
+          Next.js
+        </button>
+        <button 
           className={`filter-btn ${activeFilter === 'React' ? 'active' : ''}`}
           onClick={() => setActiveFilter('React')}
         >
@@ -171,7 +187,7 @@ const Projects = () => {
           className={`filter-btn ${activeFilter === 'HTML/CSS' ? 'active' : ''}`}
           onClick={() => setActiveFilter('HTML/CSS')}
         >
-          HTML/CSS
+          HTML
         </button>
       </div>
       
