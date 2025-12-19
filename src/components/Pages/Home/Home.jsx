@@ -2,10 +2,10 @@ import React from 'react';
 import './Home.css';
 
 const topSkills = [
-  { name: 'JavaScript', logo: '/icons/icons8-javascript-96.png' },
-  { name: 'React', logo: '/icons/icons8-reagir-96.png' },
-  { name: 'HTML5', logo: '/icons/icons8-html-96.png' },
-  { name: 'CSS3', logo: '/icons/icons8-css-96.png' },
+  { name: 'Typescript', logo: '/icons/icons8-typescript-96.png' },
+  { name: 'Next.js', logo: '/icons/icons8-nextjs-96.png' },
+  { name: 'Node.js', logo: '/icons/icons8-nodejs-96.png' },
+  { name: 'PostgreSQL', logo: '/icons/icons8-postgresql-48.png' },
 ];
 
 function Home() {
@@ -19,7 +19,7 @@ function Home() {
 
             <div className="subtitle-wrapper mb-3">
               <h2 className="home-subtitle">
-                Desenvolvedor Full Stack | React.js & Next.js
+                Desenvolvedor Full Stack | React.js, Next.js, Node.js, TypeScript | Front-end & Back-end
               </h2>
               
               <div className="social-links-inline">
@@ -38,7 +38,7 @@ function Home() {
             </div>
 
             <p className="home-bio mt-3 lead">
-              Desenvolvo aplicações web completas, unindo interfaces modernas a back-ends robustos. Focado em criar soluções escaláveis com React, Next.js e Node.js.
+              Transformo requisitos de negócio em software funcional. Especialista em criar aplicações web escaláveis e interfaces modernas com foco em performance e experiência do usuário.
             </p>
 
             <div className="skills-resumo-container mt-5 mb-5">
@@ -86,14 +86,13 @@ function Home() {
           </div>
           <div className="col-md-6 text-center text-md-start">
             <p className="about-text">
-              Sou estudante do <strong>3º ano de Ciência da Computação</strong> e entusiasta do desenvolvimento Full Stack.
+              Sou <strong>Desenvolvedor Full Stack</strong> e estudante de Ciência da Computação (FIB), focado em resolver problemas reais através da tecnologia.
             </p>
             <p className="about-text">
-              Minha jornada começou na faculdade, onde descobri minha paixão pelo ecossistema JavaScript. 
-              Hoje, crio aplicações de ponta a ponta, integrando interfaces fluidas com bancos de dados e APIs em projetos reais.
+              Domino o ecossistema <strong>JavaScript (Next.js, React, Node.js e TypeScript)</strong>. Tenho experiência prática criando aplicações completas (SaaS), integrando Front-end moderno com APIs seguras, bancos de dados SQL e sistemas de pagamento.
             </p>
             <p className="about-text">
-              Estou em busca da minha primeira oportunidade como desenvolvedor Júnior ou Estagiário para aplicar minhas habilidades em Front e Back-end e crescer com a equipe.
+              Busco atuar como <strong>Júnior ou Estagiário</strong>, aplicando minha facilidade de comunicação e colaboração para entregar código limpo e resultados concretos para a equipe.
             </p>
         </div>
         </div>

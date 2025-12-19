@@ -30,6 +30,7 @@ const skillsData = [
     items: [
       { name: 'Git', logo: '/icons/icons8-git-96.png' },
       { name: 'GitHub', logo: '/icons/icons8-github-96.png' },
+      { name: 'Vercel', logo: '/icons/vercel_.png' },
     ]
   }
 ];
