@@ -3,7 +3,7 @@ import "./Habilidades.css";
 
 const skillsData = [
   {
-    category: "Front-End (Minha Especialidade)",
+    category: "Front-End",
     items: [
       { name: "React", logo: "/icons/icons8-reagir-96.png" },
       { name: "Next.js", logo: "/icons/icons8-nextjs-96.png" },
