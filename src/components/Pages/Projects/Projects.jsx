@@ -3,6 +3,26 @@ import "./Projects.css";
 
 const allProjectsData = [
   {
+    id: 16,
+    title: "FreelaVault",
+    description:
+      "Marketplace de códigos-fonte com upload de arquivos (.zip) via Vercel Blob. Possui sistema de checkout Stripe, avaliações de clientes condicionais à compra e área de download para compradores.",
+    imageUrl: "/sites/site16.png",
+    siteUrl: "https://freelavault.vercel.app/",
+    githubUrl: "https://github.com/JoaoAndreotti90/FreelaVault",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma",
+      "PostgreSQL",
+      "Stripe",
+      "NextAuth",
+      "Vercel Blob",
+    ],
+    category: "Next",
+},
+  {
     id: 15,
     title: "LinkHub",
     description:
