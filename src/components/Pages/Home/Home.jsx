@@ -19,7 +19,7 @@ function Home() {
 
             <div className="subtitle-wrapper mb-3">
               <h2 className="home-subtitle">
-                Desenvolvedor Full Stack | React.js, Next.js, Node.js | Buscando minha primeira oportunidade para gerar impacto
+                Desenvolvedor Full Stack | React.js, Next.js, Node.js, TypeScript | Buscando minha primeira oportunidade para gerar impacto
               </h2>
               
               <div className="social-links-inline">
