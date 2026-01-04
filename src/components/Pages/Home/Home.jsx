@@ -19,7 +19,7 @@ function Home() {
 
             <div className="subtitle-wrapper mb-3">
               <h2 className="home-subtitle">
-                Desenvolvedor Full Stack | React.js, Next.js, Node.js, TypeScript | Front-end & Back-end
+                Desenvolvedor Full Stack | React.js, Next.js, Node.js | Buscando minha primeira oportunidade para gerar impacto
               </h2>
               
               <div className="social-links-inline">
@@ -89,7 +89,7 @@ function Home() {
               Sou <strong>Desenvolvedor Full Stack</strong> e estudante de Ciência da Computação (FIB), focado em resolver problemas reais através da tecnologia.
             </p>
             <p className="about-text">
-              Domino o ecossistema <strong>JavaScript (Next.js, React, Node.js e TypeScript)</strong>. Tenho experiência prática criando aplicações completas (SaaS), integrando Front-end moderno com APIs seguras, bancos de dados SQL e sistemas de pagamento.
+              Domino o ecossistema <strong>JavaScript (Next.js, React, Node.js e TypeScript)</strong>. Tenho experiência prática criando aplicações completas (SaaS), integrando Front-end moderno com APIs seguras, PostgreSQL e sistemas de pagamento.
             </p>
             <p className="about-text">
               Busco atuar como <strong>Júnior ou Estagiário</strong>, aplicando minha facilidade de comunicação e colaboração para entregar código limpo e resultados concretos para a equipe.
