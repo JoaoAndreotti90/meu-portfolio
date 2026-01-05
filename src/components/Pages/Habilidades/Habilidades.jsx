@@ -12,7 +12,6 @@ const skillsData = [
       { name: "Tailwind CSS", logo: "/icons/icons8-tailwind-96.png" },
       { name: "HTML5", logo: "/icons/icons8-html-96.png" },
       { name: "CSS3", logo: "/icons/icons8-css-96.png" },
-      { name: "Bootstrap", logo: "/icons/icons8-bootstrap-96.png" },
     ],
   },
   {
