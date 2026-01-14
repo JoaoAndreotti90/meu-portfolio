@@ -3,6 +3,27 @@ import "./Projects.css";
 
 const allProjectsData = [
   {
+    id: 17,
+    title: "SmartPost",
+    description:
+      "SaaS de geração de conteúdo viral com Inteligência Artificial. Possui sistema de créditos via Stripe (Webhooks), testes automatizados com Jest, autenticação segura e histórico de posts gerados.",
+    imageUrl: "/sites/site17.png",
+    siteUrl: "https://smart-post-ten.vercel.app/",
+    githubUrl: "https://github.com/JoaoAndreotti90/SmartPost",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma",
+      "PostgreSQL",
+      "Stripe",
+      "NextAuth",
+      "OpenAI API",
+      "Jest",
+    ],
+    category: "Next",
+  },
+  {
     id: 16,
     title: "FreelaVault",
     description:
@@ -21,7 +42,7 @@ const allProjectsData = [
       "Vercel Blob",
     ],
     category: "Next",
-},
+  },
   {
     id: 15,
     title: "LinkHub",
