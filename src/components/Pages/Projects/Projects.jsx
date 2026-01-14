@@ -18,7 +18,7 @@ const allProjectsData = [
       "PostgreSQL",
       "Stripe",
       "NextAuth",
-      "OpenAI API",
+      "Gemini API",
       "Jest",
     ],
     category: "Next",
