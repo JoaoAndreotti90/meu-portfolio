@@ -19,7 +19,7 @@ function Home() {
 
             <div className="subtitle-wrapper mb-3">
               <h2 className="home-subtitle">
-                Desenvolvedor Full Stack | React.js, Next.js, Node.js, TypeScript | Buscando minha primeira oportunidade para gerar impacto
+                Desenvolvedor Full Stack | React.js, Next.js, Node.js & TypeScript | Foco em SaaS e Performance Web
               </h2>
               
               <div className="social-links-inline">
@@ -38,7 +38,7 @@ function Home() {
             </div>
 
             <p className="home-bio mt-3 lead">
-              Transformo requisitos de negócio em software funcional. Especialista em criar aplicações web escaláveis e interfaces modernas com foco em performance e experiência do usuário.
+              Transformo requisitos de negócio em software de alta performance. Experiência na construção de aplicações SaaS com foco em Server-Side Rendering (SSR), Real-Time e Integridade de Dados.
             </p>
 
             <div className="skills-resumo-container mt-5 mb-5">
@@ -81,18 +81,18 @@ function Home() {
           <div className="col-md-6 mb-4 mb-md-0">
             <h2 className="about-title-large fw-bold text-center text-lg-start">
               Mais que código, <br />
-              <span className="text-highlight">construo soluções.</span>
+              <span className="text-highlight">entrego resultados.</span>
             </h2>
           </div>
           <div className="col-md-6 text-center text-md-start">
             <p className="about-text">
-              Sou <strong>Desenvolvedor Full Stack</strong> e estudante de Ciência da Computação (FIB), focado em resolver problemas reais através da tecnologia.
+              Sou <strong>Desenvolvedor Full Stack</strong> e estudante de Ciência da Computação (FIB), Minha abordagem une a teoria acadêmica com a prática de mercado, focando em arquitetura robusta e resolução de problemas complexos.
             </p>
             <p className="about-text">
-              Domino o ecossistema <strong>JavaScript (Next.js, React, Node.js e TypeScript)</strong>. Tenho experiência prática criando aplicações completas (SaaS), integrando Front-end moderno com APIs seguras, PostgreSQL e sistemas de pagamento.
+              Domino o ecossistema <strong>JavaScript (Next.js, React, Node.js e TypeScript)</strong>. Tenho experiência comprovada na criação de plataformas SaaS, integrando pagamentos reais (Stripe), APIs de IA (Gemini) e bancos de dados relacionais (PostgreSQL/Prisma).
             </p>
             <p className="about-text">
-              Busco atuar como <strong>Júnior ou Estagiário</strong>, aplicando minha facilidade de comunicação e colaboração para entregar código limpo e resultados concretos para a equipe.
+              Busco atuar como <strong>Júnior ou Estagiário</strong>, trazendo minha experiência em automação (Python) e desenvolvimento web para colaborar em projetos desafiadores e crescer tecnicamente junto com a equipe.
             </p>
         </div>
         </div>
