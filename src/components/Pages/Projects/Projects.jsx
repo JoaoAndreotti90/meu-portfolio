@@ -3,6 +3,26 @@ import "./Projects.css";
 
 const allProjectsData = [
   {
+    id: 18,
+    title: "BarberPro - Agendamento com IA",
+    description:
+      "Sistema Full Stack de agendamento para barbearias. O diferencial é um Chatbot com IA (Gemini) que negocia horários com o cliente, verifica conflitos no banco de dados e realiza o agendamento automaticamente, simulando uma recepção humana.",
+    imageUrl: "/sites/site18.png", 
+    siteUrl: "https://barber-pro-omega.vercel.app/", 
+    githubUrl: "https://github.com/JoaoAndreotti90/BarberPro",
+    tags: [
+      "NestJS",
+      "Next.js",
+      "PostgreSQL",
+      "Prisma",
+      "Gemini AI",
+      "Docker",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
+    category: "Full Stack",
+  },
+  {
     id: 17,
     title: "SmartPost",
     description:
@@ -21,7 +41,7 @@ const allProjectsData = [
       "Gemini API",
       "Jest",
     ],
-    category: "Next",
+    category: "Full Stack",
   },
   {
     id: 16,
@@ -41,7 +61,7 @@ const allProjectsData = [
       "NextAuth",
       "Vercel Blob",
     ],
-    category: "Next",
+    category: "Full Stack",
   },
   {
     id: 15,
@@ -60,7 +80,7 @@ const allProjectsData = [
       "Stripe",
       "NextAuth",
     ],
-    category: "Next",
+    category: "Full Stack",
   },
   {
     id: 14,
@@ -78,7 +98,7 @@ const allProjectsData = [
       "PostgreSQL",
       "Stripe",
     ],
-    category: "Next",
+    category: "Full Stack",
   },
   {
     id: 13,
@@ -89,7 +109,7 @@ const allProjectsData = [
     siteUrl: "https://cineflix-ruddy.vercel.app/",
     githubUrl: "https://github.com/JoaoAndreotti90/cineflix",
     tags: ["React", "Tailwind CSS", "API"],
-    category: "React",
+    category: "Front-end",
   },
   {
     id: 12,
@@ -100,7 +120,7 @@ const allProjectsData = [
     siteUrl: "https://estoque-git-main-joao-andreottis-projects.vercel.app/",
     githubUrl: "https://github.com/JoaoAndreotti90/estoque",
     tags: ["React", "Tailwind CSS"],
-    category: "React",
+    category: "Estudos",
   },
   {
     id: 11,
@@ -111,7 +131,7 @@ const allProjectsData = [
     siteUrl: "https://taskflow-sepia-psi.vercel.app/",
     githubUrl: "https://github.com/JoaoAndreotti90/taskflow",
     tags: ["React", "Supabase", "CSS", "Full-Stack"],
-    category: "React",
+    category: "Full Stack",
   },
   {
     id: 10,
@@ -122,7 +142,7 @@ const allProjectsData = [
     siteUrl: "https://aura-pro-sigma.vercel.app/",
     githubUrl: "https://github.com/JoaoAndreotti90/AuraPro",
     tags: ["React", "CSS"],
-    category: "React",
+    category: "Landing Page",
   },
   {
     id: 9,
@@ -133,7 +153,7 @@ const allProjectsData = [
     siteUrl: "https://doutor-certo.vercel.app/",
     githubUrl: "https://github.com/JoaoAndreotti90/DoutorCerto",
     tags: ["React", "Supabase", "CSS", "Full-Stack"],
-    category: "React",
+    category: "Full Stack",
   },
   {
     id: 1,
@@ -144,7 +164,7 @@ const allProjectsData = [
     siteUrl: "https://pixel-feed-peach.vercel.app/login",
     githubUrl: "https://github.com/JoaoAndreotti90/PixelFeed",
     tags: ["React", "Supabase", "CSS", "Full-Stack"],
-    category: "React",
+    category: "Full Stack",
   },
   {
     id: 2,
@@ -155,7 +175,7 @@ const allProjectsData = [
     siteUrl: "https://mini-blog-kappa-beryl.vercel.app/",
     githubUrl: "https://github.com/JoaoAndreotti90/Mini-blog",
     tags: ["React", "Supabase", "CSS", "Full-Stack"],
-    category: "React",
+    category: "Full Stack",
   },
   {
     id: 3,
@@ -166,7 +186,7 @@ const allProjectsData = [
     siteUrl: "https://meu-portfolio-two-ruby.vercel.app/",
     githubUrl: "https://github.com/JoaoAndreotti90/meu-portfolio",
     tags: ["React", "CSS", "bootstrap"],
-    category: "React",
+    category: "Front-end",
   },
   {
     id: 4,
@@ -177,7 +197,7 @@ const allProjectsData = [
     siteUrl: "https://job-finder-front.vercel.app/",
     githubUrl: "https://github.com/JoaoAndreotti90/job-finder-front",
     tags: ["React", "Node.js", "CSS", "Full-Stack"],
-    category: "React",
+    category: "Full Stack",
   },
 
   {
@@ -189,7 +209,7 @@ const allProjectsData = [
     siteUrl: "http://crud-react-joao.vercel.app/",
     githubUrl: "https://github.com/JoaoAndreotti90/crud-react",
     tags: ["React", "Node.js", "CSS", "bootstrap", "Full-Stack"],
-    category: "React",
+    category: "Estudos",
   },
 
   {
@@ -201,7 +221,7 @@ const allProjectsData = [
     siteUrl: "https://loja-esportiva-ten.vercel.app/",
     githubUrl: "https://github.com/JoaoAndreotti90/loja-esportiva",
     tags: ["HTML", "CSS", "JS"],
-    category: "HTML/CSS",
+    category: "Landing Page",
   },
 
   {
@@ -213,7 +233,7 @@ const allProjectsData = [
     siteUrl: "https://ser-digital-omega.vercel.app/",
     githubUrl: "https://github.com/JoaoAndreotti90/Ser-Digital",
     tags: ["HTML", "CSS"],
-    category: "HTML/CSS",
+    category: "Landing Page",
   },
   {
     id: 8,
@@ -224,7 +244,7 @@ const allProjectsData = [
     siteUrl: "https://jogo-palavras.vercel.app/",
     githubUrl: "https://github.com/JoaoAndreotti90/Jogo-Palavras",
     tags: ["React", "CSS"],
-    category: "React",
+    category: "Estudos",
   },
 ];
 
@@ -249,24 +269,30 @@ const Projects = () => {
           Todos
         </button>
         <button
-          className={`filter-btn ${activeFilter === "Next" ? "active" : ""}`}
-          onClick={() => setActiveFilter("Next")}
+          className={`filter-btn ${activeFilter === "Full Stack" ? "active" : ""}`}
+          onClick={() => setActiveFilter("Full Stack")}
         >
-          Next.js
+          Full Stack
         </button>
         <button
-          className={`filter-btn ${activeFilter === "React" ? "active" : ""}`}
-          onClick={() => setActiveFilter("React")}
+          className={`filter-btn ${activeFilter === "Front-end" ? "active" : ""}`}
+          onClick={() => setActiveFilter("Front-end")}
         >
-          React
+          Front-end
+        </button>
+        <button
+          className={`filter-btn ${activeFilter === "Landing Page" ? "active" : ""}`}
+          onClick={() => setActiveFilter("Landing Page")}
+        >
+          Landing Page
         </button>
         <button
           className={`filter-btn ${
-            activeFilter === "HTML/CSS" ? "active" : ""
+            activeFilter === "Estudos" ? "active" : ""
           }`}
-          onClick={() => setActiveFilter("HTML/CSS")}
+          onClick={() => setActiveFilter("Estudos")}
         >
-          HTML
+          Estudos
         </button>
       </div>
 
