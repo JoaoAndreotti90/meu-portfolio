@@ -3,6 +3,26 @@ import "./Projects.css";
 
 const allProjectsData = [
   {
+    id: 19,
+    title: "TechStore - E-commerce Completo",
+    description:
+      "Plataforma Full Stack de loja virtual. O diferencial é a integração de pagamentos reais com a API do Stripe e autenticação segura via Google, além de um carrinho de compras dinâmico e painel de pedidos.",
+    imageUrl: "/sites/site19.png", 
+    siteUrl: "https://tech-store-topaz-sigma.vercel.app/", 
+    githubUrl: "https://github.com/JoaoAndreotti90/TechStore", 
+    tags: [
+      "NestJS",
+      "Next.js",
+      "PostgreSQL",
+      "Prisma",
+      "Stripe API",
+      "Google OAuth",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
+    category: "Full Stack",
+  },
+  {
     id: 18,
     title: "BarberPro - Agendamento com IA",
     description:
